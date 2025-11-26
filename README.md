@@ -1,94 +1,80 @@
-# NLP Assignments Repository
+# NLP Assignments & Projects Repository
 
-**Text Preprocessing & Sentiment Analysis Projects**
+**Text Preprocessing, Sentiment Analysis & Model Fine-Tuning**
 
-This repository contains two Natural Language Processing (NLP) assignments demonstrating fundamental and applied NLP techniques using Python, NLTK, and Machine Learning models.
+This repository showcases a complete progression through core Natural Language Processing concepts — from basic text cleaning to machine learning classification and advanced model fine-tuning.
 
-Both assignments focus on understanding how raw text is transformed into meaningful data for computational analysis and prediction.
+Each project highlights a different stage of the NLP workflow, demonstrating how raw language data evolves into intelligent, predictive systems.
 
 ---
 
-## 📌 Assignments Included
+## Projects Included
 
-### ✅ Assignment 1 – NLP Text Preprocessing Pipeline
+### Assignment 1 – NLP Text Preprocessing Pipeline
 
-Implements a complete NLP preprocessing workflow on a custom paragraph, displaying the results at each stage.
+Focuses on fundamental NLP preparation techniques applied to a custom paragraph, with outputs displayed at every stage.
 
-#### Steps Covered:
+#### Techniques Implemented:
 
 * Tokenization
 * Stopword Removal
 * Stemming
 * Lemmatization
 
-#### Purpose:
+**Objective:**
+To understand how raw text is standardized and cleaned before further computational processing.
 
-To demonstrate how raw text is cleaned and normalized before being used in NLP tasks or machine learning models.
-
-#### File:
-
-* `NLP_LAB/Assignment1.ipynb`
+**File:**
+`Assignment1.ipynb`
 
 ---
 
-### ✅ Assignment 2 – Sentiment Analysis Using Machine Learning
+### Assignment 2 – Sentiment Analysis Using Machine Learning
 
-Builds a full end-to-end sentiment analysis model that classifies text as **Positive** or **Negative** using a large real-world dataset.
+Implements a complete sentiment analysis system to classify text as **Positive** or **Negative** using real-world data.
 
-#### Objective:
+#### Dataset:
 
-To design an accurate sentiment classification pipeline using modern NLP and ML techniques.
+NLTK Movie Reviews Dataset
 
----
+* Positive: 1000
+* Negative: 1000
+* Total: 2000 balanced reviews
 
-## 📖 Assignment 2 – Project Overview
+#### Pipeline:
 
-This project implements a Sentiment Analysis system using the **NLTK Movie Reviews Dataset**.
-
-### Dataset Details:
-
-* Positive Reviews: 1000
-* Negative Reviews: 1000
-* Total Reviews: 2000
-* Balanced and suitable for classification tasks
-
----
-
-## 🔧 Pipeline Workflow
-
-1. **Load Dataset**
-
-   * Dataset imported from NLTK and combined with labels.
-
-2. **Data Cleaning**
-
-   * Lowercasing
-   * Removing punctuation
-   * Removing special characters
-
-3. **Feature Extraction**
-
-   * TF-IDF Vectorization using `TfidfVectorizer`
-
-4. **Model Training**
-
-   * Logistic Regression classifier
-
-5. **Model Evaluation**
-
-   * Accuracy Score
-   * Confusion Matrix
-   * Performance testing
-
-6. **Custom Prediction**
-
-   * Allows user-input sentences for live sentiment prediction.
+* Text Cleaning & Normalization
+* TF-IDF Feature Extraction
+* Logistic Regression Model
+* Model Evaluation (Accuracy & Confusion Matrix)
+* Custom Sentiment Prediction
 
 **Expected Accuracy:** 80% – 92%
 
+**File:**
+`Assignment2.ipynb`
+
 ---
 
-## 🧪 Technologies Used
+### Project 3 – Fine-Tuning NLP Model
+
+This project demonstrates the concept of fine-tuning a pre-trained NLP model to enhance performance on specific language tasks.
+
+It explores how adjusting model parameters and training on task-specific data improves accuracy, contextual understanding, and generalization.
+
+#### Key Concepts:
+
+* Transfer Learning
+* Fine-Tuning Pre-trained Models
+* Model Optimization
+* Custom Dataset Adaptation
+
+**File:**
+`Fine_Tuning.ipynb`
+
+---
+
+## 🧪 Technologies & Tools Used
 
 * Python
 * NLTK
@@ -96,6 +82,7 @@ This project implements a Sentiment Analysis system using the **NLTK Movie Revie
 * Machine Learning
 * TF-IDF Vectorization
 * Logistic Regression
+* Fine-Tuning Techniques
 * Google Colab / Jupyter Notebook
 
 ---
@@ -109,6 +96,7 @@ NLP_LAB/
 │
 ├── Assignment2.ipynb
 │
+├── Fine_Tuning.ipynb
 ├── README.md
 ```
 
@@ -116,29 +104,29 @@ NLP_LAB/
 
 ## ▶️ How to Run
 
-### Option A: Google Colab
+### Option 1: Google Colab
 
-1. Open the notebook file.
-2. Connect to runtime.
-3. Run all cells sequentially.
-4. Enter custom text for prediction (Assignment 2).
+* Open any notebook.
+* Run all cells sequentially.
+* Follow instructions inside each notebook to explore outputs.
 
-### Option B: Local Machine
+### Option 2: Local Machine
 
-Install required libraries:
+Install dependencies:
 
 ```bash
 pip install nltk scikit-learn
 ```
 
-Then run the notebooks using Jupyter Notebook or VS Code.
+Launch using Jupyter Notebook or VS Code and execute the cells.
 
 ---
 
-## 🎯 Learning Outcomes
+## 🎯 What This Repository Demonstrates
 
-* Understanding of NLP preprocessing techniques
-* Practical implementation of TF-IDF
-* Training and evaluating ML classifiers
-* Insight into real-world sentiment analysis systems
-* Comparing basic NLP processing with applied ML use cases
+* Foundations of NLP text preprocessing
+* Real-world sentiment classification systems
+* Feature engineering using TF-IDF
+* Machine learning model training and evaluation
+* Advanced NLP concepts through fine-tuning
+* Practical understanding of end-to-end NLP workflows
