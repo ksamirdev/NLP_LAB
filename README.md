@@ -1,67 +1,144 @@
-# NLP Assignment 1 – Text Preprocessing Pipeline
+# NLP Assignments Repository
 
-This repository contains **Assignment 1** for the SEC-D Natural Language Processing (NLP) course. The objective of this project is to implement a complete NLP preprocessing pipeline on a custom paragraph and display the output at each stage to clearly demonstrate how raw text is transformed for computational analysis.
+**Text Preprocessing & Sentiment Analysis Projects**
 
-## Project Objective
+This repository contains two Natural Language Processing (NLP) assignments demonstrating fundamental and applied NLP techniques using Python, NLTK, and Machine Learning models.
 
-The assignment focuses on understanding and applying the fundamental steps involved in preparing text data for NLP tasks. Each step highlights how text evolves from an unstructured paragraph into a format suitable for machine learning models.
+Both assignments focus on understanding how raw text is transformed into meaningful data for computational analysis and prediction.
 
-## NLP Pipeline Steps
+---
 
-### 1. Tokenization
+## 📌 Assignments Included
 
-The process of splitting a paragraph into individual words or units called tokens. This allows the model to process text as discrete elements instead of a continuous string.
+### ✅ Assignment 1 – NLP Text Preprocessing Pipeline
 
-Example:
-"Natural Language Processing" → ["Natural", "Language", "Processing"]
+Implements a complete NLP preprocessing workflow on a custom paragraph, displaying the results at each stage.
 
-### 2. Stopword Removal
+#### Steps Covered:
 
-Common words such as "the", "is", "in", "and", which provide little semantic value, are removed to reduce noise and improve efficiency.
+* Tokenization
+* Stopword Removal
+* Stemming
+* Lemmatization
 
-Example:
-"This is a sample sentence" → ["sample", "sentence"]
+#### Purpose:
 
-### 3. Stemming
+To demonstrate how raw text is cleaned and normalized before being used in NLP tasks or machine learning models.
 
-Words are reduced to their root form by trimming prefixes or suffixes, often resulting in non-dictionary forms.
+#### File:
 
-Examples:
-playing → play
-studies → studi
+* `NLP_LAB/Assignment1.ipynb`
 
-This method is fast but less linguistically accurate.
+---
 
-### 4. Lemmatization
+### ✅ Assignment 2 – Sentiment Analysis Using Machine Learning
 
-Words are converted to their meaningful base or dictionary form using grammatical rules and context.
+Builds a full end-to-end sentiment analysis model that classifies text as **Positive** or **Negative** using a large real-world dataset.
 
-Examples:
-studies → study
-better → good
+#### Objective:
 
-This method is slower than stemming but produces more accurate results.
+To design an accurate sentiment classification pipeline using modern NLP and ML techniques.
 
-## Technologies Used
+---
+
+## 📖 Assignment 2 – Project Overview
+
+This project implements a Sentiment Analysis system using the **NLTK Movie Reviews Dataset**.
+
+### Dataset Details:
+
+* Positive Reviews: 1000
+* Negative Reviews: 1000
+* Total Reviews: 2000
+* Balanced and suitable for classification tasks
+
+---
+
+## 🔧 Pipeline Workflow
+
+1. **Load Dataset**
+
+   * Dataset imported from NLTK and combined with labels.
+
+2. **Data Cleaning**
+
+   * Lowercasing
+   * Removing punctuation
+   * Removing special characters
+
+3. **Feature Extraction**
+
+   * TF-IDF Vectorization using `TfidfVectorizer`
+
+4. **Model Training**
+
+   * Logistic Regression classifier
+
+5. **Model Evaluation**
+
+   * Accuracy Score
+   * Confusion Matrix
+   * Performance testing
+
+6. **Custom Prediction**
+
+   * Allows user-input sentences for live sentiment prediction.
+
+**Expected Accuracy:** 80% – 92%
+
+---
+
+## 🧪 Technologies Used
 
 * Python
-* NLTK (Natural Language Toolkit)
-* Google Colab
-* Jupyter Notebook
+* NLTK
+* Scikit-learn
+* Machine Learning
+* TF-IDF Vectorization
+* Logistic Regression
+* Google Colab / Jupyter Notebook
 
-## Repository Contents
+---
 
-* **Assignment1.ipynb**
-  Jupyter Notebook containing the complete implementation with clear, step-by-step explanations and outputs for each preprocessing stage.
+## 📁 Repository Structure
 
-## How to Run
+```
+NLP_LAB/
+│
+├── Assignment1.ipynb
+│
+├── Assignment2.ipynb
+│
+├── README.md
+```
 
-1. Open the notebook in Google Colab or Jupyter Notebook.
-2. Run each cell sequentially to observe the transformations applied to the input text.
-3. Review printed outputs after every step to understand the pipeline workflow.
+---
 
-## Learning Outcomes
+## ▶️ How to Run
 
-* Understanding of basic NLP preprocessing concepts
-* Practical experience using NLTK
-* Insight into how text preparation impacts NLP performance
+### Option A: Google Colab
+
+1. Open the notebook file.
+2. Connect to runtime.
+3. Run all cells sequentially.
+4. Enter custom text for prediction (Assignment 2).
+
+### Option B: Local Machine
+
+Install required libraries:
+
+```bash
+pip install nltk scikit-learn
+```
+
+Then run the notebooks using Jupyter Notebook or VS Code.
+
+---
+
+## 🎯 Learning Outcomes
+
+* Understanding of NLP preprocessing techniques
+* Practical implementation of TF-IDF
+* Training and evaluating ML classifiers
+* Insight into real-world sentiment analysis systems
+* Comparing basic NLP processing with applied ML use cases
